@@ -8,6 +8,7 @@ import {
   InputGroup,
   InputProps as ChakraInputProps,
   InputRightElement,
+  ThemingProps,
 } from '@chakra-ui/react';
 import { ChangeEvent, useState } from 'react';
 import { BsFillEyeFill, BsFillEyeSlashFill, BsX } from 'react-icons/bs';
@@ -17,7 +18,7 @@ export interface IInputProps extends ChakraInputProps {
   clearable?: boolean;
   label?: string;
   helperText?: string;
-  size?: 'xs' | 'sm' | 'md' | 'lg';
+  size?: ThemingProps<'Input'>['size'];
 }
 
 export const Input = forwardRef<IInputProps, 'input'>(

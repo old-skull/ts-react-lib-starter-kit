@@ -1,4 +1,5 @@
 import { Box, BoxProps, LayoutProps } from '@chakra-ui/react';
+import { TStyleObject } from '@utils/types';
 import { FC, ReactNode } from 'react';
 
 export const enum ELayoutOrientation {
@@ -20,7 +21,7 @@ export const Layout: FC<ILayoutProps> = ({
   spacing = 0,
   ...rest
 }) => {
-  const orientations: { [key in ELayoutOrientation]: unknown } = {
+  const orientations: TStyleObject<ELayoutOrientation, LayoutProps> = {
     horizontal: {
       display: 'flex',
     },
