@@ -1,4 +1,4 @@
-import { Box, BoxProps, LayoutProps } from '@chakra-ui/react';
+import { Box, BoxProps, LayoutProps as ChakraLayoutProps } from '@chakra-ui/react';
 import { TStyleObject } from '@utils/types';
 import { FC, ReactNode } from 'react';
 
@@ -7,7 +7,7 @@ export const enum ELayoutOrientation {
   vertical = 'vertical',
 }
 
-type TChakraGenericLayoutProps = BoxProps & LayoutProps;
+type TChakraGenericLayoutProps = BoxProps & ChakraLayoutProps;
 
 export interface ILayoutProps extends TChakraGenericLayoutProps {
   children: ReactNode;
@@ -21,7 +21,7 @@ export const Layout: FC<ILayoutProps> = ({
   spacing = 0,
   ...rest
 }) => {
-  const orientations: TStyleObject<ELayoutOrientation, LayoutProps> = {
+  const orientations: TStyleObject<ELayoutOrientation, ChakraLayoutProps> = {
     horizontal: {
       display: 'flex',
     },
