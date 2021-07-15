@@ -12,3 +12,4 @@ ReactDOM.render(
 );
 
 export * from './components';
+export * from './utils';

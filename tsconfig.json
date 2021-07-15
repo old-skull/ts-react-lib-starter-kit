@@ -15,7 +15,10 @@
     "baseUrl": "./",
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "paths": {
+      "@utils/*": ["src/utils/*"]
+    }
   },
   "include": ["./src/**/*.ts", "./src/**/*.tsx", "index.ts"],
   "exclude": ["node_modules", "webpack.config.ts"]
