@@ -12,6 +12,7 @@
     "**/*spec.ts",
     "**/*test.ts",
     "**/__mocks__",
+    "**/cypress",
     "webpack.config.ts"
   ]
 }
