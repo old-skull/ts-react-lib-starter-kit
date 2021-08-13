@@ -3,3 +3,4 @@
 - Typescript
 - React
 - Chakra-UI
+- Cypress
