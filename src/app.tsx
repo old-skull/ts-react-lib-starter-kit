@@ -1,6 +1,5 @@
 import { Box, Flex } from '@chakra-ui/react';
-import { Button, EButtonImpl, Input, Layout, Title } from './components';
-import { ELayoutOrientation } from './components/layout';
+import { Button, EButtonImpl, ELayoutOrientation, Input, Layout, Title } from '@components';
 
 export const App = () => {
   return (

@@ -1,5 +1,5 @@
 import { Box, BoxProps, LayoutProps as ChakraLayoutProps } from '@chakra-ui/react';
-import { TStyleObject } from '@utils/types';
+import { TStyleObject } from '@utils';
 import { FC, ReactNode } from 'react';
 
 export const enum ELayoutOrientation {

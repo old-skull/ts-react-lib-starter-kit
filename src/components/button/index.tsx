@@ -1,8 +1,5 @@
-import {
-  Button as ChakraButton,
-  ButtonProps as ChakraButtonProps
-} from '@chakra-ui/react';
-import { TStyleObject } from '@utils/types';
+import { Button as ChakraButton, ButtonProps as ChakraButtonProps } from '@chakra-ui/react';
+import { TStyleObject } from '@utils';
 import { ReactNode } from 'react';
 
 export const enum EButtonImpl {
