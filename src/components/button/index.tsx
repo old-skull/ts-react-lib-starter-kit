@@ -2,7 +2,7 @@ import { Button as ChakraButton, ButtonProps as ChakraButtonProps } from '@chakr
 import { TStyleObject } from '@utils';
 import { ReactNode } from 'react';
 
-export const enum EButtonImpl {
+export enum EButtonImpl {
   base = 'base',
   warn = 'warn',
   action = 'action',
