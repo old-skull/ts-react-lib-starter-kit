@@ -13,6 +13,7 @@
     "**/*test.ts",
     "**/__mocks__",
     "**/cypress",
-    "webpack.config.ts"
+    "webpack.config.ts",
+    "**/*stories.tsx"
   ]
 }
