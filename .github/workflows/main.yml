@@ -25,6 +25,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           config-file: ./cypress.config.json
+          start: npm run start:ci
           record: true
 
         env:
