@@ -7,5 +7,6 @@
   "downloadsFolder": "src/cypress/downloads",
   "supportFile": "src/cypress/support/index.ts",
   "testFiles": "**/*.spec.ts",
-  "baseUrl": "http://localhost:3333"
+  "baseUrl": "http://localhost:3333",
+  "projectId": "joi6j8"
 }
