@@ -24,7 +24,7 @@ jobs:
       - name: Test
         uses: cypress-io/github-action@v2
         with:
-          config-file: cypress-config.json
+          config-file: ./cypress-config.json
           record: true
 
         env:
