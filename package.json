@@ -13,9 +13,7 @@
     "format": "prettier --write \"./**/*.{ts,tsx}\"",
     "lint": "eslint \"./src/**/*.{ts,tsx}\" --fix",
     "cypress:open": "cypress open --config-file cypress.config.json",
-    "cypress:run": "eval $(grep '^CYPRESS_RECORD_KEY' .env) && cypress run --record --config-file cypress.config.json",
     "test": "start-server-and-test start http://localhost:3333 cypress:open",
-    "test:ci": "start-server-and-test start:ci http://localhost:3333 cypress:run",
     "prepare": "husky install && chmod ug+x .husky/*",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"

@@ -22,13 +22,16 @@ jobs:
         run: npm run build
 
       - name: Test
-        run: npm run test:ci
+        uses: cypress-io/github-action@v2
+        with:
+          config-file: cypress-config.json
+          record: true
+
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
       - name: Deploy Storybook to Github Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           branch: gh-pages
           folder: storybook-static
-
-        env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
