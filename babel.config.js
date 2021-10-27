@@ -28,14 +28,15 @@ module.exports = function (api) {
     '@babel/preset-typescript',
   ];
 
+  // NOTE: storybook requires to include `*.stories.tsx` in transpilation.
+  // But in the final build we don't need `*.stories.tsx`, so this files ignored in package.json script via `--ignore`
+  // I think there is a workaround with different babel envs, but for now I using this method
   const ignore = [
     '**/__mocks__',
     '**/*.spec.js',
     '**/*.spec.ts',
     '**/*.test.js',
     '**/*.test.ts',
-    '**/*.stories.jsx',
-    '**/*.stories.tsx',
     '**/cypress',
   ];
 
