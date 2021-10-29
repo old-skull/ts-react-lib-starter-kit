@@ -1,5 +1,14 @@
 import { Box, Flex } from '@chakra-ui/react';
-import { Button, EButtonImpl, ELayoutOrientation, Input, Layout, Title } from '@components';
+import {
+  Button,
+  EButtonImpl,
+  ELayoutOrientation,
+  ELinkVariant,
+  Input,
+  Layout,
+  Link,
+  Title,
+} from '@components';
 
 export const App = () => {
   return (
@@ -28,6 +37,32 @@ export const App = () => {
           <Input hiddable />
           <Input clearable />
           <Input hiddable clearable />
+        </Flex>
+      </Box>
+
+      <Box as="article">
+        <Title>Links</Title>
+        <Flex flexWrap="wrap" flexDirection="column" gridGap="4">
+          <Link href="/">plain</Link>
+          <Link href="/" variant={ELinkVariant.underlined}>
+            underlined
+          </Link>
+          <Link href="/" variant={ELinkVariant.doubleunderlined}>
+            doubleunderlined
+          </Link>
+          <Link href="/" variant={ELinkVariant.striked}>
+            striked
+          </Link>
+          <Link href="/" variant={ELinkVariant.overline}>
+            overline
+          </Link>
+          <Link href="/" variant={ELinkVariant.wavy}>
+            wavy
+          </Link>
+          <Link href="https://docs.cypress.io" isExternal>
+            external
+          </Link>
+          <Link href="/link to the">transforms `my href`` into `my-href`</Link>
         </Flex>
       </Box>
     </Layout>
