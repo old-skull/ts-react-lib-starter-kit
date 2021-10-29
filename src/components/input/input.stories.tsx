@@ -6,7 +6,7 @@ export default {
   component: Input,
 } as Meta;
 
-export const Basic = () => <Input />;
+export const Base = () => <Input />;
 export const Hiddeble = () => <Input hiddable />;
 export const Clearable = () => <Input clearable />;
 export const HiddebleAndClearable = () => <Input clearable hiddable />;
