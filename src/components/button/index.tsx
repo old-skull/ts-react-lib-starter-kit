@@ -1,6 +1,6 @@
 import { Button as ChakraButton, ButtonProps as ChakraButtonProps } from '@chakra-ui/react';
 import { TStyleObject } from '@utils';
-import { ReactNode } from 'react';
+import { FC, ReactNode } from 'react';
 
 export enum EButtonImpl {
   base = 'base',
@@ -14,7 +14,7 @@ export interface IButtonProps extends ChakraButtonProps {
   impl?: EButtonImpl;
 }
 
-export const Button: React.FC<IButtonProps> = ({ children, impl = EButtonImpl.base, ...rest }) => {
+export const Button: FC<IButtonProps> = ({ children, impl = EButtonImpl.base, ...rest }) => {
   const impls: TStyleObject<EButtonImpl, ChakraButtonProps> = {
     base: {},
     warn: {

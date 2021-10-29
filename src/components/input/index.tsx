@@ -10,7 +10,7 @@ import {
   InputRightElement,
   ThemingProps,
 } from '@chakra-ui/react';
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, FC, useState } from 'react';
 import { BsFillEyeFill, BsFillEyeSlashFill, BsX } from 'react-icons/bs';
 
 export interface IInputProps extends ChakraInputProps {
@@ -21,7 +21,7 @@ export interface IInputProps extends ChakraInputProps {
   size?: ThemingProps<'Input'>['size'];
 }
 
-export const Input = forwardRef<IInputProps, 'input'>(
+export const Input: FC<IInputProps> = forwardRef<IInputProps, 'input'>(
   ({ hiddable = false, clearable = false, size = 'md', label, helperText, ...rest }, ref) => {
     const [show, setShow] = useState<boolean>(true);
     const toggleHiddable = () => setShow(!show);
