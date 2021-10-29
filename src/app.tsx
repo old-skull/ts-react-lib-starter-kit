@@ -7,6 +7,7 @@ import {
   Input,
   Layout,
   Link,
+  Select,
   Title,
 } from '@components';
 
@@ -63,6 +64,35 @@ export const App = () => {
             external
           </Link>
           <Link href="/link to the">transforms `my href`` into `my-href`</Link>
+        </Flex>
+      </Box>
+
+      <Box as="article">
+        <Title>Selects</Title>
+        <Flex flexWrap="wrap" gridGap="4">
+          <Select
+            items={[
+              { label: 'label', value: 'value' },
+              { label: 'label_2', value: 'value_2' },
+              { label: 3, value: 'value_3' },
+            ]}
+          />
+          <Select
+            helperText="Select with helper text"
+            items={[
+              { label: 'label', value: 'value' },
+              { label: 'label_2', value: 'value_2' },
+              { label: 3, value: 'value_3' },
+            ]}
+          />
+          <Select
+            placeholder="Placeholder"
+            items={[
+              { label: 'label', value: 'value' },
+              { label: 'label_2', value: 'value_2' },
+              { label: 3, value: 'value_3' },
+            ]}
+          />
         </Flex>
       </Box>
     </Layout>
