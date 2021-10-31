@@ -1,4 +1,5 @@
-import { Box, Flex } from '@chakra-ui/react';
+import { Fonts, theme } from '@chakra';
+import { Box, ChakraProvider, Flex } from '@chakra-ui/react';
 import {
   Button,
   EButtonImpl,
@@ -10,6 +11,7 @@ import {
   Select,
   Title,
 } from '@components';
+import ReactDOM from 'react-dom';
 
 export const App = () => {
   return (
@@ -98,3 +100,11 @@ export const App = () => {
     </Layout>
   );
 };
+
+ReactDOM.render(
+  <ChakraProvider theme={theme}>
+    <Fonts />
+    <App />
+  </ChakraProvider>,
+  document.getElementById('root'),
+);

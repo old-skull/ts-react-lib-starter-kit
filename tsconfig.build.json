@@ -14,6 +14,7 @@
     "**/__mocks__",
     "**/cypress",
     "webpack.config.ts",
-    "**/*stories.tsx"
+    "**/*stories.tsx",
+    "**/app.tsx"
   ]
 }

@@ -38,6 +38,7 @@ module.exports = function (api) {
     '**/*.test.js',
     '**/*.test.ts',
     '**/cypress',
+    '**/app.tsx',
   ];
 
   return {

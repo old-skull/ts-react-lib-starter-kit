@@ -6,7 +6,7 @@ import webpack, { Configuration } from 'webpack';
 import * as pkJson from './package.json';
 
 const webpackConfig = (env): Configuration => ({
-  entry: './src/index.tsx',
+  entry: './src/app.tsx',
   ...(env.production || !env.development ? {} : { devtool: 'eval-source-map' }),
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
