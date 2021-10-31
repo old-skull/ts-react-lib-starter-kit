@@ -1,7 +1,19 @@
 {
   "name": "ts-react-lib-starter-kit",
   "version": "1.0.0",
-  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "typings": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "default": "./dist/esm/index.js"
+    }
+  },
   "scripts": {
     "start": "webpack-cli serve --mode=development --port 3333 --env development --open --hot",
     "start:ci": "webpack-cli serve --mode=development --port 3333 --env development --hot",
