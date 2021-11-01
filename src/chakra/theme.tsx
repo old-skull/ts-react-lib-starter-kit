@@ -1,6 +1,6 @@
-import { ChakraTheme, extendTheme } from '@chakra-ui/react';
+import { extendTheme } from '@chakra-ui/react';
 
-export const theme: ChakraTheme = extendTheme({
+export const theme = extendTheme({
   styles: {
     global: {
       '*': {

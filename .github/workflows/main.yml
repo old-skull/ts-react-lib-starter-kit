@@ -15,24 +15,26 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
+
       - name: Install deps
-        run: npm ci
+        run: yarn install --immutable --immutable-cache
 
       - name: Build
-        run: npm run build
+        run: yarn build
 
       - name: Test
         uses: cypress-io/github-action@v2
         with:
+          install: false
           config-file: ./cypress.config.json
-          start: npm run start:ci
+          start: yarn start:ci
           record: true
 
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
       - name: Build Storybook
-        run: npm run build-storybook
+        run: yarn build-storybook
 
       - name: Deploy Storybook to Github Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
