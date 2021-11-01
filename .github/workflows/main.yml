@@ -40,5 +40,5 @@ jobs:
       - name: Deploy Storybook to Github Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          branch: gh-pages
+          branch: gh-pages-yarn-pnp
           folder: storybook-static
