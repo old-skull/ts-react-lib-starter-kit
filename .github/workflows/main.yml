@@ -27,6 +27,7 @@ jobs:
         with:
           install: false
           config-file: ./cypress.config.json
+          command-prefix: yarn dlx
           start: yarn start:ci
           record: true
 
