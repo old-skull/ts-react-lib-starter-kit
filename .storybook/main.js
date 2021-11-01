@@ -2,10 +2,7 @@ const path = require('path');
 const toPath = _path => path.join(process.cwd(), _path);
 
 module.exports = {
-  core: {
-    builder: 'webpack5',
-  },
-  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(ts|tsx)'],
+  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
   webpackFinal: async config => {
     return {
@@ -14,10 +11,10 @@ module.exports = {
         ...config.resolve,
         alias: {
           ...config.resolve.alias,
-          '@chakra-ui/react': toPath('node_modules/@chakra-ui/react'),
-          '@emotion/react': toPath('node_modules/@emotion/react'),
-          '@emotion/styled': toPath('node_modules/@emotion/styled'),
-          'framer-motion': toPath('node_modules/framer-motion'),
+          '@chakra-ui/react': '@chakra-ui/react',
+          '@emotion/react': '@emotion/react',
+          '@emotion/styled': '@emotion/styled',
+          'framer-motion': 'framer-motion',
         },
       },
     };
