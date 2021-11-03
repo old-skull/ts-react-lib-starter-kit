@@ -1,6 +1,10 @@
 # ts-react-lib-starter-kit (yarn-pnp)
 
-**_NOTE: This branch uses Yarn2 with PnP so you need to configure your editor. I already added some configs for vscode and vim. To configure other editors use Yarn2 SDK from the [docs](https://yarnpkg.com/getting-started/editor-sdks). For For example if you using JetBrains IDE you can find example repo with configuration like [this](https://github.com/clianor/yarn2-example-with-intellij)_**
+**_NOTE: This branch uses Yarn2 with PnP as package manager so you need to configure your editor. There is configs for vscode and vim. To configure other editors use Yarn2 SDK from the [docs](https://yarnpkg.com/getting-started/editor-sdks). For example if you are using JetBrains IDE you can check example repo with configuration [here](https://github.com/clianor/yarn2-example-with-intellij). Or checkout to the other branch._**
+
+1. [npm](https://github.com/old-skull/ts-react-lib-starter-kit/tree/master)
+2. [yarn-pnp](https://github.com/old-skull/ts-react-lib-starter-kit/tree/yarn-pnp)
+3. [pnpm](https://github.com/old-skull/ts-react-lib-starter-kit/tree/pnpm)
 
 Starter kit for UI library based on React.
 
