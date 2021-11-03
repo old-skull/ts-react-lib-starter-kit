@@ -1,9 +1,10 @@
 # ts-react-lib-starter-kit (npm)
 
-**_NOTE: This branch uses npm as package manager. Checkout to the different branch to use other package manager._**
+**_NOTE: This branch uses pnpm as package manager. Checkout to the different branch to use other package manager._**
 
-1. [npm](https://github.com/TicTak21/ts-react-lib-starter-kit)
-2. [yarn-pnp](https://github.com/TicTak21/ts-react-lib-starter-kit/tree/yarn-pnp)
+1. [npm](https://github.com/old-skull/ts-react-lib-starter-kit)
+2. [yarn-pnp](https://github.com/old-skull/ts-react-lib-starter-kit/tree/yarn-pnp)
+3. [pnpm](https://github.com/old-skull/ts-react-lib-starter-kit/tree/pnpm)
 
 Starter kit for UI library based on React.
 
